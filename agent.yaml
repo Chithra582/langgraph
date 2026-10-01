@@ -1,0 +1,24 @@
+spec_version: "0.1.0"
+name: langgraph-orchestrator
+version: 0.1.0
+description: Core stateful agent runtime engine for LangGraph, modeling cyclic workflows, human-in-the-loop gates, and durable checkpointing.
+license: MIT
+author: LangChain AI, Chithra582 & OpenGAP Contributors
+
+metadata:
+  domain: Developer Tools / Stateful Agent Orchestration & Graph Runtimes
+  category: Developer Tools
+
+skills:
+  - stategraph-cyclic-designer
+  - durable-checkpoint-manager
+  - human-in-the-loop-interruptor
+  - subgraph-multi-agent-composer
+  - streaming-token-dispatcher
+
+tools:
+  - graph-topology-renderer
+  - checkpoint-state-auditor
+  - conditional-edge-tester
+  - interrupt-action-simulator
+  - channel-reducer-linter

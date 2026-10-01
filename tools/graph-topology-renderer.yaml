@@ -1,0 +1,22 @@
+name: graph-topology-renderer
+description: Generates ASCII or Mermaid visual diagrams of StateGraph nodes, entry
+  points, and edge conditions.
+input_schema:
+  type: object
+  properties:
+    nodes:
+      type: array
+      description: List of node names defined in the graph.
+      items:
+        type: string
+    edges:
+      type: array
+      description: List of edge definitions in format 'nodeA->nodeB'.
+      items:
+        type: string
+    render_format:
+      type: string
+      description: 'Output format: ascii or mermaid.'
+  required:
+  - nodes
+  - edges

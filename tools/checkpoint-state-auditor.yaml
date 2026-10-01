@@ -1,0 +1,14 @@
+name: checkpoint-state-auditor
+description: Queries, inspects, and verifies persistent thread state snapshots and
+  history trees.
+input_schema:
+  type: object
+  properties:
+    thread_id:
+      type: string
+      description: Identifier of the conversation thread to inspect.
+    checkpoint_id:
+      type: string
+      description: Specific checkpoint snapshot ID to retrieve (optional).
+  required:
+  - thread_id

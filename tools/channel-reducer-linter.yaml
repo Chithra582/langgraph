@@ -1,0 +1,14 @@
+name: channel-reducer-linter
+description: Audits state channel definitions and binary operator reducer functions
+  for race conditions.
+input_schema:
+  type: object
+  properties:
+    state_definition:
+      type: string
+      description: Python source code defining the TypedDict or BaseModel state.
+    parallel_nodes:
+      type: boolean
+      description: Whether the graph executes concurrent parallel node branches.
+  required:
+  - state_definition

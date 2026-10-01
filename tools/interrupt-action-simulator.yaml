@@ -1,0 +1,14 @@
+name: interrupt-action-simulator
+description: Simulates human-in-the-loop pause, state mutation, and resumption behaviors.
+input_schema:
+  type: object
+  properties:
+    node_name:
+      type: string
+      description: Target node configured with interrupt_before or interrupt_after.
+    proposed_update:
+      type: object
+      description: State dictionary modifications applied by human operator.
+  required:
+  - node_name
+  - proposed_update

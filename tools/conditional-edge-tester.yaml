@@ -1,0 +1,15 @@
+name: conditional-edge-tester
+description: Unit tests router functions against edge case state payloads to verify
+  destination nodes.
+input_schema:
+  type: object
+  properties:
+    router_name:
+      type: string
+      description: Name of the conditional routing function under test.
+    mock_state:
+      type: object
+      description: Test state dictionary to supply to the router.
+  required:
+  - router_name
+  - mock_state
