@@ -1,5 +1,5 @@
 spec_version: "0.1.0"
-name: langgraph-orchestrator
+name: langgraph
 version: 0.1.0
 description: Core stateful agent runtime engine for LangGraph, modeling cyclic workflows, human-in-the-loop gates, and durable checkpointing.
 license: MIT
